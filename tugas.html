@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaintCroist</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        .title {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.croist {
+    color: hotpink;
+}
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: maroon; 
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        .navbar h1 {
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .nav-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .nav-links a:hover {
+            color: yellow;
+        }
+
+        /* SECTION */
+        section {
+            padding: 100px 20px;
+            min-height: 100vh;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            background: lightyellow; 
+        }
+
+        /* ABOUT */
+        #about {
+            background: lightgray; 
+        }
+
+        /* PRODUCT */
+        #product {
+            background: #fff8dc; 
+        }
+
+        /* GALLERY */
+        #gallery {
+            background: #d3d3d3; 
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* CONTACT */
+        #contact {
+            background: lightyellow;
+        }
+
+        /* FORM */
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+        }
+
+        small {
+            color: red;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+
+            body {
+                background: lightblue; 
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .navbar {
+                background: lightblue; 
+            }
+
+            section {
+                background: lightblue;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h1 class="title">
+    <span class="saint">Saint</span>
+    <span class="croist">Croist</span>
+</h1>
+
+
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#product">Product</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+<!-- HOME -->
+<section id="home" class="hero">
+    <h2>Welcome to SaintCroist</h2>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>Saint Croist is a fashion brand founded in Jakarta in 2026. This brand was founded with the permission of God Almighty to be used by mankind on earth.</p>
+</section>
+
+<!-- PRODUCT -->
+<section id="product">
+    <h2>Our Products</h2>
+    <ul>
+        <li>TShirt</li>
+        <li>Hoodie Zipper</li>
+        <li>Jersey</li>
+        <li>Accessories</li>
+    </ul>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+    <h2>Gallery</h2>
+
+    <div class="gallery">
+        <img src="https://via.placeholder.com/300">
+        <img src="https://via.placeholder.com/300">
+        <img src="https://via.placeholder.com/300">
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <form id="contactForm">
+        <input type="text" id="nama" placeholder="Nama">
+        <small id="errorNama"></small>
+
+        <input type="email" id="email" placeholder="Email">
+        <small id="errorEmail"></small>
+
+        <textarea id="pesan" placeholder="Pesan"></textarea>
+        <small id="errorPesan"></small>
+
+        <button type="submit">Kirim</button>
+    </form>
+</section>
+
+</body>
+</html>

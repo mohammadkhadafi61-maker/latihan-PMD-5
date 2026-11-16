@@ -1,0 +1,2 @@
+<?php echo "Halo, Khadafi"; ?>
+<h1>Version 2.0 - Deployed via GitHub Actions</h1>
